@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MultithreadedApp.iml" filepath="$PROJECT_DIR$/MultithreadedApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MulithreadedApp.iml" filepath="$PROJECT_DIR$/MulithreadedApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -59,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/progressBar"
+        android:progressDrawable="@drawable/progress_style"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />

@@ -183,13 +183,13 @@ public class MainActivity extends ActionBarActivity {
         if (adapter != null) {
             adapter.clear();
             myListView.setAdapter(adapter);
-            progress.setProgress(0);
             String msg = "Load cleared!";
             Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         } else {
             String errorMsg = "Nothing to clear";
             Toast.makeText(this, errorMsg, Toast.LENGTH_SHORT).show();
         }
+        progress.setProgress(0);
     }
 
 
