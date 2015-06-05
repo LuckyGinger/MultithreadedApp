@@ -22,6 +22,13 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Multithreading App
+ *
+ * <p>Immplements the workings of threads in an android app
+ *
+ * @author Thom Allen
+ */
 public class MainActivity extends ActionBarActivity {
     private static Context context;
     private String filename = "numbers.txt";
@@ -68,6 +75,11 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Creates a file when the Create button is pressed
+     *
+     * @param view
+     */
     public void runCreate(View view) {
         progressBarStatus1 = 0;
         new Thread(new Runnable() {
@@ -107,6 +119,11 @@ public class MainActivity extends ActionBarActivity {
         }).start();
     }
 
+    /**
+     * Loads in the file created in runCreat() and displays the text in a listView.
+     *
+     * @param view
+     */
     public void runLoad(View view) {
         progressBarStatus2 = 0;
         new Thread(new Runnable() {
@@ -157,6 +174,11 @@ public class MainActivity extends ActionBarActivity {
         }).start();
     }
 
+    /**
+     * Checks if there is no file loaded. If there is a file loaded, it will clear it.
+     *
+     * @param view
+     */
     public void runClear(View view) {
         if (adapter != null) {
             adapter.clear();
